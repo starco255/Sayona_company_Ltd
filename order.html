@@ -1,0 +1,133 @@
+<html>
+<head>
+<title>Sayona Drinks | Order</title>
+<style>
+  body { font-family: Arial, sans-serif; background-color: pink; color: #333; margin: 0; text-align: center; }
+  header { background: linear-gradient(135deg, #1b4f4f, #985113); padding: 40px 20px 25px; }
+  header h1 { color: #ffffff; margin: 0; font-size: 2.2em; letter-spacing: 3px; }
+  nav ul { list-style-type: none; padding: 0; margin: 0; display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; }
+  nav ul li { display: inline; }
+  nav ul li a { background-color: rgba(255,255,255,0.15); color: #ffffff; text-decoration: none; font-weight: bold; padding: 8px 20px; border-radius: 20px; transition: background-color 0.3s ease, color 0.3s ease; }
+  nav ul li a:hover { background-color: #ffffff; color: #1b4f4f; }
+  nav ul li a.current { background-color: #ffffff; color: #e67e22; }
+  section { padding: 25px 30px; max-width: 900px; margin: 0 auto; margin-top: -25px;}
+  h2 { color: #1b4f4f; }
+  form { background-color: #a8ab89; border: 2px solid #eeddc8; border-radius: 8px; padding: 25px; text-align: left; }
+  fieldset { border: 1px solid #eeddc8; border-radius: 6px; margin: 0 0 20px 0; padding: 15px 18px; }
+  legend { color: #1b4f4f; font-weight: bold; padding: 0 8px; }
+  label { display: block; margin-top: 14px; font-weight: bold; }
+  input[type="text"], input[type="email"], input[type="tel"], input[type="number"],
+  input[type="date"], select, textarea {
+    width: 100%; padding: 9px; margin-top: 5px; box-sizing: border-box;
+    border: 1px solid #cccccc; border-radius: 4px; font-family: inherit; font-size: 1em;
+  }
+  select[multiple] { height: 100px; }
+  .radio-row, .checkbox-row { margin-top: 8px; }
+  .radio-row label, .checkbox-row label { display: inline; font-weight: normal; margin-left: 4px; margin-right: 16px; }
+  .btn-row { text-align: center; margin-top: 20px; }
+  input[type="submit"], input[type="reset"] {
+    padding: 10px 24px; border: none; border-radius: 10px; font-weight: bold;
+    cursor: pointer; margin: 0 6px;
+  }
+  input[type="submit"] { background-color: #9f4a00; color: #ffffff; }
+  input[type="reset"] { background-color: #787272; color: #ffffff; }
+  footer { background-color: #1b4f4f; color: #ffffff; text-align: center; padding: 12px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1 style="margin: 6px 0 22px; margin-top: -17px;">SAYONA DRINKS</h1>
+  <marquee behavior="scroll" direction="up" scrollamount="2" style="justify-items: right;"><p style="color: pink; margin-top: -17px; font-size: 20px;"><em><code>YOUR WELCOME!</code></em> &#127760;</p></marquee>
+  <nav>
+    <ul>
+      <li><a href="home.html">HOME</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="products.html">PRODUCTS</a></li>
+      <li><a href="order.html" class="current">ORDER</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section>
+  <h2>Place an Order</h2>
+  <p>Fill in the form below and our sales team will confirm your order.</p>
+
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Customer Details</legend>
+
+      <label for="fname">Full Name</label>
+      <input type="text" id="fname" name="fullname" placeholder="e.g. Starco David" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="yourName@example.com">
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="+255 700 000 000" required>
+
+      <label for="address">Delivery Address</label>
+      <input type="text" id="address" name="address" placeholder="e.g. Gongo la Mboto, Dar es Salaam" required>
+
+      <label for="ddate">Preferred Delivery Date</label>
+      <input type="date" id="ddate" name="delivery_date">
+    </fieldset>
+
+    <fieldset>
+      <legend>Order Details</legend>
+
+      <label for="product">Product</label>
+      <select id="product" name="product">
+          <option value="tunda">Sayona Tunda</option>
+          <option value="frutti's">Sayona Frutti's</option>
+          <option value="twist" selected>Sayona Twist</option>
+          <option value="juicy">Sayona Juicy</option>
+          <option value="splash">Sayona Splash</option>
+          <option value="snacks">Sayona Snacks</option>
+          <option value="cola">Sayona Cola</option>
+          <option value="zesty">Sayona Zesty</option>
+          <option value="water">Sayona Water</option>
+      </select>
+
+      <label>Bottle Size</label>
+      <div class="radio-row">
+        <input type="radio" id="size-500" name="size" value="500ml" checked>
+        <label for="size-500">500ml</label>
+        <input type="radio" id="size-1l" name="size" value="1litre">
+        <label for="size-1l">1 litre</label>
+      </div>
+
+      <label for="quantity">Quantity</label>
+      <input type="number" id="quantity" name="quantity" min="1" value="1">
+
+      <label>Payment Method</label>
+      <div class="checkbox-row">
+        <input type="checkbox" id="pay-cash" name="payment" value="cash" checked>
+        <label for="pay-cash">Cash on delivery</label>
+        <input type="checkbox" id="pay-mobile" name="payment" value="mobile">
+        <label for="pay-mobile">Mobile money</label>
+        <input type="checkbox" id="pay-bank" name="payment" value="bank">
+        <label for="pay-bank">Bank transfer</label>
+      </div>
+
+      <label for="notes">Special Instructions</label>
+      <textarea id="notes" name="notes" rows="4" placeholder="Delivery notes, allergy info, etc."></textarea>
+
+      <label for="proof">Upload Proof of Payment (optional)</label>
+      <input type="file" id="proof" name="proof">
+    </fieldset>
+
+    <div class="btn-row">
+      <input type="submit" value="Place Order">
+      <input type="reset" value="Clear Form">
+    </div>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2026 Sayona Drinks Company Limited</p>
+</footer>
+
+</body>
+</html>

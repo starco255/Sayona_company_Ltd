@@ -1,0 +1,79 @@
+<html>
+<head>
+<title>Sayona Drinks | Contact</title>
+<style>
+  body { font-family: Arial, sans-serif; background-color: pink; color: #333; margin: 0; text-align: center; }
+  header { background: linear-gradient(135deg, #1b4f4f, #985113); padding: 40px 20px 25px; }
+  header h1 { color: #ffffff; margin: 0; font-size: 2.2em; letter-spacing: 3px; }
+  nav ul { list-style-type: none; padding: 0; margin: 0; display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; }
+  nav ul li { display: inline; }
+  nav ul li a { background-color: rgba(255,255,255,0.15); color: #ffffff; text-decoration: none; font-weight: bold; padding: 8px 20px; border-radius: 20px; transition: background-color 0.3s ease, color 0.3s ease; }
+  nav ul li a:hover { background-color: #ffffff; color: #1b4f4f; }
+  nav ul li a.current { background-color: #ffffff; color: #e67e22; }
+  section { padding: 25px 30px; max-width: 900px; margin: 0 auto; margin-top: -25px;}
+  h2 { color: #1b4f4f; }
+  .info { margin-bottom: 20px; }
+  form { background-color: #a8ab89; border: 2px solid #eeddc8; border-radius: 8px; padding: 25px; text-align: left; }
+  label { display: block; margin-top: 14px; font-weight: bold; }
+  input[type="text"], input[type="email"], input[type="tel"], textarea {
+    width: 100%; padding: 9px; margin-top: 5px; box-sizing: border-box;
+    border: 1px solid #cccccc; border-radius: 4px; font-family: inherit; font-size: 1em;
+  }
+  .btn-row { text-align: center; margin-top: 20px; }
+  input[type="submit"], input[type="reset"] {
+    padding: 10px 24px; border: none; border-radius: 10px; font-weight: bold;
+    cursor: pointer; margin: 0 6px;
+  }
+  input[type="submit"] { background-color: #9f4a00; color: #ffffff; }
+  input[type="reset"] { background-color: #787272; color: #ffffff; }
+  footer { background-color: #1b4f4f; color: #ffffff; text-align: center; padding: 12px; }
+</style>
+</head>
+<body>
+<header>
+   <h1 style="margin: 6px 0 22px; margin-top: -17px;">SAYONA DRINKS</h1>
+   <marquee behavior="scroll" direction="up" scrollamount="2" style="justify-items: right;"><p style="color: pink; margin-top: -17px; font-size: 20px;"><em><code>YOUR WELCOME!</code></em> &#127760;</p></marquee>
+  <nav>
+    <ul>
+      <li><a href="home.html">HOME</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="products.html">PRODUCTS</a></li>
+      <li><a href="order.html">ORDER</a></li>
+      <li><a href="contact.html" class="current">CONTACT</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section>
+  <h2>Contact Us</h2>
+  <p class="info">Dar es Salaam, Tanzania &nbsp;|&nbsp; Phone: +255 22 333 0000 &nbsp;|&nbsp;
+  Email: <a href="mailto:info@sayonadrinks.co.tz">info@sayonadrinks.co.tz</a></p>
+
+  <form action="#" method="post">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" placeholder="e.g. Starco David" required>
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" placeholder="youname@example.com" required>
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" placeholder="+255 700 000 000">
+
+    <label for="subject">Subject</label>
+    <input type="text" id="subject" name="subject" placeholder="What is this about?">
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+
+    <div class="btn-row">
+      <input type="submit" value="Send Message">
+      <input type="reset" value="Clear Form">
+    </div>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2026 Sayona Drinks Company Limited</p>
+</footer>
+</body>
+</html>
